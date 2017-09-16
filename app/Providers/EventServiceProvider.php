@@ -13,7 +13,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Atnic\AdminLTE\Events\SomeEvent' => [
+        'Atnic\AdminLTE\Events\Event' => [
             'Atnic\AdminLTE\Listeners\EventListener',
         ],
     ];
