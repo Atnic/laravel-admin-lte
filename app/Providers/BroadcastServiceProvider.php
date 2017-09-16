@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Atnic\AdminLTE\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Atnic\AdminLTE\Http\Controllers\Auth;
 
-use App\User;
-use App\Http\Controllers\Controller;
+use Atnic\AdminLTE\User;
+use Atnic\AdminLTE\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
