@@ -1,0 +1,11 @@
+@extends('admin-lte::layouts.main')
+
+@section('sidebar-menu')
+<ul class="sidebar-menu">
+  <li class="header">MAIN NAVIGATOR</li>
+  <li class="active">
+    <i class="fa fa-home"></i>
+    <span>Home</span>
+  </li>
+</ul>
+@endsection
