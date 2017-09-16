@@ -14,7 +14,7 @@ class AdminLTEMakeCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:admin-lte';
+    protected $signature = 'make:admin-lte {--views : Only scaffold the views}';
 
     /**
      * The console command description.
@@ -67,7 +67,7 @@ class AdminLTEMakeCommand extends Command
     public function handle()
     {
         $this->info('Execute make:auth');
-        $this->call('make:auth', [ '--force' => true ]);
+        $this->call('make:auth', [ '--force' => true, '--views' => $this->option('views') ]);
 
         $this->info('Start AdminLTE scaffolding');
         $this->info('Copying views...');
@@ -86,11 +86,14 @@ class AdminLTEMakeCommand extends Command
         }
         $this->info('Copying public...');
         $this->xcopy(__DIR__.'/stubs/make/public', base_path('public'));
-        file_put_contents(
-            base_path('webpack.mix.js'),
-            file_get_contents(__DIR__.'/stubs/make/webpack.mix.stub'),
-            FILE_APPEND
-        );
+
+        if (!$this->option('views')) {
+            file_put_contents(
+                base_path('webpack.mix.js'),
+                file_get_contents(__DIR__.'/stubs/make/webpack.mix.stub'),
+                FILE_APPEND
+            );
+        }
 
         $this->info('AdminLTE scaffolding generated successfully.');
     }
