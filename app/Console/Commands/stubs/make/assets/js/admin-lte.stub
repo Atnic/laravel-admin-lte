@@ -8,15 +8,17 @@ window._ = require('lodash');
  */
 
 try {
-   window.$ = window.jQuery = require('jquery');
+    window.$ = window.jQuery = require('jquery');
 
-   require('fastclick');
+    require('bootstrap-sass');
 
-   require('slim-scroll');
+    require('fastclick');
 
-   require('icheck');
+    require('slim-scroll');
 
-   require('admin-lte');
+    require('icheck');
+
+    require('admin-lte');
 } catch (e) {}
 
 /**
