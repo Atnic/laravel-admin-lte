@@ -31,18 +31,18 @@
   <div id="app" class="wrapper">
 
     <!-- Main Header -->
-    @include('layouts.main-header.main')
+    @include('admin-lte::layouts.main-header.main')
     <!-- Left side column. contains the logo and sidebar -->
-    @include('layouts.main-sidebar.main')
+    @include('admin-lte::layouts.main-sidebar.main')
 
     <!-- Content Wrapper. Contains page content -->
-    @include('layouts.content-wrapper.main')
+    @include('admin-lte::layouts.content-wrapper.main')
 
     <!-- Main Footer -->
-    @include('layouts.main-footer.main')
+    @include('admin-lte::layouts.main-footer.main')
 
     <!-- Control Sidebar -->
-    {{-- @include('layouts.control-sidebar.main') --}}
+    {{-- @include('admin-lte::layouts.control-sidebar.main') --}}
   </div>
   @section('scripts')
   <script src="{{ mix('/js/manifest.js') }}" charset="utf-8"></script>

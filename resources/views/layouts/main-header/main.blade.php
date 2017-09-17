@@ -22,10 +22,10 @@
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
         @if (auth()->check())
-        @include('layouts.main-header.navbar-right-menu.message-menu')
-        @include('layouts.main-header.navbar-right-menu.notifications-menu')
-        @include('layouts.main-header.navbar-right-menu.tasks-menu')
-        @include('layouts.main-header.navbar-right-menu.user-menu')
+        @include('admin-lte::layouts.main-header.navbar-right-menu.message-menu')
+        @include('admin-lte::layouts.main-header.navbar-right-menu.notifications-menu')
+        @include('admin-lte::layouts.main-header.navbar-right-menu.tasks-menu')
+        @include('admin-lte::layouts.main-header.navbar-right-menu.user-menu')
         <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
           {{ csrf_field() }}
         </form>
