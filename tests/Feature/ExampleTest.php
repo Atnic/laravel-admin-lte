@@ -1,11 +1,8 @@
 <?php
 
-namespace Tests\Feature;
+namespace Atnic\AdminLTE\Tests\Feature;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Atnic\AdminLTE\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {

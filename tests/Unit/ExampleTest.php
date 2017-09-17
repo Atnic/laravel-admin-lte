@@ -1,10 +1,8 @@
 <?php
 
-namespace Tests\Unit;
+namespace Atnic\AdminLTE\Tests\Unit;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Atnic\AdminLTE\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {

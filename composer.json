@@ -1,6 +1,6 @@
 {
     "name": "atnic/laravel-admin-lte",
-    "description": "Easy AdminLTE integration with Laravel 5.4 and laravel mix friendly.",
+    "description": "Laravel 5.4 Package for integrating AdminLTE template and this package is Laravel Mix friendly.",
     "keywords": ["laravel", "adminlte", "admin-lte", "package", "composer"],
     "license": "MIT",
     "type": "package",
@@ -15,37 +15,13 @@
         "laravel/tinker": "~1.0"
     },
     "autoload": {
-        "classmap": [
-            "database"
-        ],
         "psr-4": {
             "Atnic\\AdminLTE\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Atnic\\AdminLTE\\Test\\": "tests/"
+            "Atnic\\AdminLTE\\Tests\\": "tests/"
         }
-    },
-    "scripts": {
-        "post-root-package-install": [
-            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "php artisan key:generate"
-        ],
-        "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
-        ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
-        ]
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     }
 }

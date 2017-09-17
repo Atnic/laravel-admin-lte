@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Atnic\AdminLTE\Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
