@@ -40,18 +40,6 @@ class AdminLTEMakeCommand extends Command
     ];
 
     /**
-     * The assets that need to be exported.
-     *
-     * @var array
-     */
-    protected $assets = [
-        'js/auth.stub' => 'js/auth.js',
-        'js/admin-lte.stub' => 'js/admin-lte.js',
-        'sass/auth.stub' => 'sass/auth.scss',
-        'sass/admin-lte.stub' => 'sass/admin-lte.scss',
-    ];
-
-    /**
      * Create a new command instance.
      *
      * @return void
@@ -80,14 +68,10 @@ class AdminLTEMakeCommand extends Command
             );
         }
         $this->info('Copying assets...');
-        foreach ($this->assets as $key => $value) {
-            copy(
-                __DIR__.'/stubs/make/assets/'.$key,
-                resource_path('assets/'.$value)
-            );
-        }
+        $this->xcopy(__DIR__.'/../../../resources/assets', resource_path('assets'));
+
         $this->info('Copying public...');
-        $this->xcopy(__DIR__.'/stubs/make/public', base_path('public'));
+        $this->xcopy(__DIR__.'/../../../public', public_path());
 
         if (!$this->option('views')) {
             file_put_contents(
