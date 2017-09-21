@@ -1,5 +1,5 @@
 # Laravel AdminLTE
-Laravel 5.4 Package for integrating AdminLTE template and this package is Laravel Mix friendly.
+Laravel 5.4 Package for integrating AdminLTE template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
 
 # Installation
 ```bash
