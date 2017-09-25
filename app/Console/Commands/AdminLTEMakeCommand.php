@@ -61,6 +61,7 @@ class AdminLTEMakeCommand extends Command
 
         $this->info('Start AdminLTE scaffolding');
         $this->info('Copying views...');
+        $this->createDirectories();
         foreach ($this->views as $key => $value) {
             copy(
                 __DIR__.'/stubs/make/views/'.$key,
@@ -82,6 +83,18 @@ class AdminLTEMakeCommand extends Command
         }
 
         $this->info('AdminLTE scaffolding generated successfully.');
+    }
+
+    /**
+     * Create the directories for the files.
+     *
+     * @return void
+     */
+    protected function createDirectories()
+    {
+        if (! is_dir(resource_path('views/errors'))) {
+            mkdir(resource_path('views/errors'), 0755, true);
+        }
     }
 
     /**
