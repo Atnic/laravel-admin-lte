@@ -1,11 +1,11 @@
 # Laravel AdminLTE
-Laravel 5.4 Package for integrating AdminLTE template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
+Laravel Package for integrating AdminLTE template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
 
 # Installation
 ```bash
 composer require atnic/laravel-admin-lte
 ```
-Add this line on ```config/app.php```, on  ```providers```
+If you are using Laravel 5.5 above skip this step, but if aren't then add this line on ```config/app.php```, on  ```providers```
 ```php
 'providers' => [
   ...

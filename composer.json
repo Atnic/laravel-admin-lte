@@ -1,18 +1,25 @@
 {
     "name": "atnic/laravel-admin-lte",
-    "description": "Laravel 5.4 Package for integrating AdminLTE template and this package is Laravel Mix friendly.",
+    "description": "Laravel Package for integrating AdminLTE template and this package is Laravel Mix friendly.",
     "keywords": ["laravel", "adminlte", "admin-lte", "package", "composer"],
     "license": "MIT",
     "type": "package",
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.4.*"
+        "laravel/framework": "^5.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7",
         "laravel/tinker": "~1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Atnic\\AdminLTE\\Providers\\AppServiceProvider"
+            ]
+        }
     },
     "autoload": {
         "psr-4": {
