@@ -1,4 +1,8 @@
 /node_modules
+/public/hot
+/storage/*.key
 /vendor
 /package-lock.json
 /composer.lock
+npm-debug.log
+yarn-error.log
