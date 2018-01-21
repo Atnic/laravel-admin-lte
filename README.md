@@ -89,7 +89,7 @@ npm install
 
 Install AdminLTE needed package from npm
 ```bash
-npm install --save-dev admin-lte fastclick font-awesome icheck slim-scroll
+npm install --save-dev admin-lte fastclick font-awesome icheck ionicons jquery-slimscroll
 ```
 
 Run Laravel Mix command

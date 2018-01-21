@@ -31,7 +31,7 @@
 
     <!-- Sidebar Menu -->
     @section('sidebar-menu')
-    <ul class="sidebar-menu">
+    <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
       <li><a href="#"><i class="fa fa-book"></i> <span>One</span></a></li>
       <li>
