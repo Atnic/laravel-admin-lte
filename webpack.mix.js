@@ -6,11 +6,11 @@ mix.js('resources/assets/js/admin-lte.js', 'public/js')
    .sass('resources/assets/sass/admin-lte.scss', 'public/css');
 
 mix.autoload({
-    jquery: [ 'window.$', '$', 'window.jQuery', 'jQuery', 'jquery'],
+    jquery: [ '$', 'jQuery', 'jquery'],
 });
 mix.extract([
     'lodash', 'jquery', 'bootstrap-sass',
-    'fastclick', 'slim-scroll', 'icheck', 'admin-lte',
+    'fastclick', 'jquery-slimscroll', 'icheck', 'admin-lte',
     'vue', 'axios'
 ], 'public/js/vendor.js');
 mix.version();

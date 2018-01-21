@@ -12,9 +12,9 @@ try {
 
     require('bootstrap-sass');
 
-    require('fastclick');
+    require('jquery-slimscroll');
 
-    require('slim-scroll');
+    require('fastclick');
 
     require('icheck');
 
@@ -59,3 +59,7 @@ if (token) {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+$(document).ready(function () {
+    $('.sidebar-menu').tree();
+});

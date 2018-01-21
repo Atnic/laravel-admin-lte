@@ -13,14 +13,15 @@
     "admin-lte": "^2.4.2",
     "axios": "^0.16.2",
     "bootstrap-sass": "^3.3.7",
-    "cross-env": "^5.1.1",
+    "cross-env": "^5.1.3",
     "fastclick": "^1.0.6",
     "font-awesome": "^4.7.0",
     "icheck": "^1.0.2",
-    "jquery": "^3.1.1",
+    "ionicons": "^3.0.0",
+    "jquery": "^3.3.1",
+    "jquery-slimscroll": "^1.3.8",
     "laravel-mix": "^1.7.2",
     "lodash": "^4.17.4",
-    "slim-scroll": "^1.3.18",
-    "vue": "^2.5.9"
+    "vue": "^2.5.13"
   }
 }
