@@ -9,7 +9,7 @@ mix.autoload({
 });
 mix.extract([
     'lodash', 'jquery', 'bootstrap-sass',
-    'fastclick', 'slim-scroll', 'icheck', 'admin-lte',
+    'fastclick', 'jquery-slimscroll', 'admin-lte',
     'vue', 'axios'
 ], 'public/js/vendor.js');
 mix.version();
