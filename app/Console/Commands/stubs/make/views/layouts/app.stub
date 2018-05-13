@@ -5,6 +5,14 @@
 @section('user-name', auth()->user()->name)
 @endif
 
+@section('breadcrumbs')
+@include('admin-lte::layouts.content-wrapper.breadcrumbs', [
+  'breadcrumbs' => [
+    (object) [ 'title' => 'Home', 'url' => route('home') ]
+  ]
+])
+@endsection
+
 @section('sidebar-menu')
 <ul class="sidebar-menu">
   <li class="header">MAIN NAVIGATOR</li>

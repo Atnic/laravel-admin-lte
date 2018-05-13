@@ -1,4 +1,3 @@
-
 window._ = require('lodash');
 
 /**
@@ -8,17 +7,17 @@ window._ = require('lodash');
  */
 
 try {
-    window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
+  require('bootstrap-sass');
 
-    require('jquery-slimscroll');
+  require('jquery-slimscroll');
 
-    require('fastclick');
+  require('fastclick');
 
-    require('icheck');
+  require('icheck');
 
-    require('admin-lte');
+  require('admin-lte');
 } catch (e) {}
 
 /**
@@ -40,9 +39,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 let token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /**
@@ -60,6 +59,9 @@ if (token) {
 //     key: 'your-pusher-key'
 // });
 
-$(document).ready(function () {
-    $('.sidebar-menu').tree();
+$(document).ready(function() {
+  $('.i-checks').iCheck({
+    checkboxClass: 'icheckbox_square-green',
+    radioClass: 'iradio_square-green'
+  });
 });
