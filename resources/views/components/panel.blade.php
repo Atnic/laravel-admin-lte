@@ -1,10 +1,10 @@
-<div class="panel panel-default">
+<div class="box">
   @if(isset($header) || isset($title))
-  <div class="panel-heading">
+  <div class="box-header">
     @if(isset($header))
     {{ $header }}
     @else
-    <span class="panel-title">{{ $title }}</span>
+    <span class="box-title">{{ $title }}</span>
     @isset($tools)
     <div class="pull-right">
       {{ $tools }}
@@ -13,11 +13,11 @@
     @endif
   </div>
   @endif
-  <div class="panel-body">
+  <div class="box-body">
     {{ !empty($body) ? $body : $slot }}
   </div>
   @isset($footer)
-  <div class="panel-footer">
+  <div class="box-footer clearfix">
     {{ $footer }}
   </div>
   @endisset

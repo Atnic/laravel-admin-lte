@@ -90,6 +90,8 @@ php artisan vendor:publish --provider="Atnic\AdminLTE\Providers\AppServiceProvid
 # Next Step
 First of all, you should understand how to use [Laravel Mix](https://laravel.com/docs/5.4/mix).
 
+Make sure `package.json` has `"laravel-mix": "^2.0"`.
+
 AdminLTE need some package on npm. First you need to run
 ```bash
 npm install
@@ -97,7 +99,7 @@ npm install
 
 Install AdminLTE needed package from npm
 ```bash
-npm install --save-dev admin-lte fastclick font-awesome icheck ionicons jquery jquery-slimscroll
+npm install --save-dev admin-lte@^2.4 bootstrap-sass fastclick font-awesome icheck ionicons jquery jquery-slimscroll
 ```
 
 Run Laravel Mix command
