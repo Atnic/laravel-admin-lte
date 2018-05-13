@@ -1,4 +1,12 @@
 # Laravel AdminLTE
+
+[![Latest Stable Version](https://poser.pugx.org/atnic/laravel-admin-lte/v/stable)](https://packagist.org/packages/atnic/laravel-admin-lte)
+[![Total Downloads](https://poser.pugx.org/atnic/laravel-admin-lte/downloads)](https://packagist.org/packages/atnic/laravel-admin-lte)
+[![Latest Unstable Version](https://poser.pugx.org/atnic/laravel-admin-lte/v/unstable)](https://packagist.org/packages/atnic/laravel-admin-lte)
+[![License](https://poser.pugx.org/atnic/laravel-admin-lte/license)](https://packagist.org/packages/atnic/laravel-admin-lte)
+[![Monthly Downloads](https://poser.pugx.org/atnic/laravel-admin-lte/d/monthly)](https://packagist.org/packages/atnic/laravel-admin-lte)
+[![Daily Downloads](https://poser.pugx.org/atnic/laravel-admin-lte/d/daily)](https://packagist.org/packages/atnic/laravel-admin-lte)
+
 Laravel Package for integrating AdminLTE template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
 
 # Installation
@@ -82,6 +90,8 @@ php artisan vendor:publish --provider="Atnic\AdminLTE\Providers\AppServiceProvid
 # Next Step
 First of all, you should understand how to use [Laravel Mix](https://laravel.com/docs/5.4/mix).
 
+Make sure `package.json` has `"laravel-mix": "^2.0"`.
+
 AdminLTE need some package on npm. First you need to run
 ```bash
 npm install
@@ -89,7 +99,7 @@ npm install
 
 Install AdminLTE needed package from npm
 ```bash
-npm install --save-dev admin-lte fastclick font-awesome icheck ionicons jquery jquery-slimscroll
+npm install --save-dev admin-lte@^2.4 bootstrap-sass fastclick font-awesome icheck ionicons jquery jquery-slimscroll
 ```
 
 Run Laravel Mix command
