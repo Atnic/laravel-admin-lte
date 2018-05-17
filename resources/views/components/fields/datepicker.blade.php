@@ -5,7 +5,7 @@
     <input type="text"
       class="form-control js-datepicker"
       name="{{ $field['name'] }}"
-      value="{{ old($field['name'], isset($model) ? $model->{$field['name']} : null) }}"{{ !empty($field['required']) ? 'required' : '' }}
+      value="{{ old($field['name'], isset($model) ? $model->{$field['name']} : null) }}" {{ !empty($field['required']) ? 'required' : '' }}
       data-date-format="yyyy-mm-dd"
       data-date-z-index-offset="1001"
       >
