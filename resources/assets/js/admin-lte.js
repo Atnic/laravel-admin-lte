@@ -64,11 +64,12 @@ if (token) {
 
 $(document).ready(function() {
   $('.i-checks').iCheck({
-    checkboxClass: 'icheckbox_square-green',
-    radioClass: 'iradio_square-green'
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue'
   });
 
   $('.js-datepicker').datepicker({
-    autoclose: true
+    autoclose: true,
+    todayHighlight: true
   })
 });

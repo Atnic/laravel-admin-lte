@@ -13,7 +13,7 @@
     "admin-lte": "^2.4.3",
     "axios": "^0.16.2",
     "bootstrap-sass": "^3.3.7",
-    "cross-env": "^5.1.5",
+    "cross-env": "^5.1.6",
     "fastclick": "^1.0.6",
     "font-awesome": "^4.7.0",
     "icheck": "^1.0.2",
