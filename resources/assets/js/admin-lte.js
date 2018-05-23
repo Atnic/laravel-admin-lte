@@ -17,6 +17,9 @@ try {
 
   require('icheck');
 
+  // bootstrap-datepicker
+  require('bootstrap-datepicker');
+
   require('admin-lte');
 } catch (e) {}
 
@@ -64,4 +67,8 @@ $(document).ready(function() {
     checkboxClass: 'icheckbox_square-green',
     radioClass: 'iradio_square-green'
   });
+
+  $('.js-datepicker').datepicker({
+    autoclose: true
+  })
 });
