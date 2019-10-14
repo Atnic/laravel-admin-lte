@@ -7,7 +7,9 @@
 [![Monthly Downloads](https://poser.pugx.org/atnic/laravel-admin-lte/d/monthly)](https://packagist.org/packages/atnic/laravel-admin-lte)
 [![Daily Downloads](https://poser.pugx.org/atnic/laravel-admin-lte/d/daily)](https://packagist.org/packages/atnic/laravel-admin-lte)
 
-Laravel Package for integrating AdminLTE template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
+Laravel Package for integrating [AdminLTE](https://adminlte.io/) template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
+
+For translation in Bahasa Indonesia 🇮🇩, [please follow this link](translations/README.id.md)
 
 # Installation
 ```bash
